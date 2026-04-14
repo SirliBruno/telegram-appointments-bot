@@ -19,7 +19,7 @@ from telegram.ext import (
 # =========================
 # إعدادات عامة
 # =========================
-BOT_TOKEN = "8685835901:AAFosk0SiuSNykeyth-rzwQIYXnDexnVuPI"
+BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TIMEZONE = os.getenv("BOT_TIMEZONE", "Asia/Riyadh")
 DB_PATH = os.getenv("BOT_DB_PATH", "appointments.db")
 
